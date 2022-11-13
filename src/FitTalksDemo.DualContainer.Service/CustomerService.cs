@@ -23,6 +23,7 @@ namespace FitTalksDemo.DualContainer.Service
         public async Task<List<Customer>> GetCustomersAsync()
         {
             var responseList = await _customerRepository.GetAllAsync();
+            //_logger.LogInformation("{responseList.Count} records were fetched...",responseList.Count);
             return responseList.ToList();
         }
 
