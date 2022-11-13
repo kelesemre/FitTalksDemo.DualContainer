@@ -1,17 +1,19 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.32901.82
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32519.379
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FitTalksDemo.DualContainer.API", "FitTalksDemo.DualContainer.API\FitTalksDemo.DualContainer.API.csproj", "{DD255EAB-9489-45CF-83DC-61E973928E49}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FitTalksDemo.DualContainer.API", "FitTalksDemo.DualContainer.API\FitTalksDemo.DualContainer.API.csproj", "{DD255EAB-9489-45CF-83DC-61E973928E49}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FitTalksDemo.DualContainer.Common", "FitTalksDemo.DualContainer.Common\FitTalksDemo.DualContainer.Common.csproj", "{1BA388CF-DFEB-4C70-AF10-B9A9B2396101}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FitTalksDemo.DualContainer.Common", "FitTalksDemo.DualContainer.Common\FitTalksDemo.DualContainer.Common.csproj", "{1BA388CF-DFEB-4C70-AF10-B9A9B2396101}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FitTalksDemo.DualContainer.Data", "FitTalksDemo.DualContainer.Data\FitTalksDemo.DualContainer.Data.csproj", "{6AA3E9D3-6ECA-4C51-9A73-F12BAAF110EF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FitTalksDemo.DualContainer.Data", "FitTalksDemo.DualContainer.Data\FitTalksDemo.DualContainer.Data.csproj", "{6AA3E9D3-6ECA-4C51-9A73-F12BAAF110EF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FitTalksDemo.DualContainer.Entities", "FitTalksDemo.DualContainer.Entities\FitTalksDemo.DualContainer.Entities.csproj", "{C6372446-6AF5-406A-ADEB-F44B88A063B6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FitTalksDemo.DualContainer.Entities", "FitTalksDemo.DualContainer.Entities\FitTalksDemo.DualContainer.Entities.csproj", "{C6372446-6AF5-406A-ADEB-F44B88A063B6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FitTalksDemo.DualContainer.Service", "FitTalksDemo.DualContainer.Service\FitTalksDemo.DualContainer.Service.csproj", "{796D9B49-9270-4F55-B328-C958C0E7A7BF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FitTalksDemo.DualContainer.Service", "FitTalksDemo.DualContainer.Service\FitTalksDemo.DualContainer.Service.csproj", "{796D9B49-9270-4F55-B328-C958C0E7A7BF}"
+EndProject
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{8FE18501-7368-40F4-8536-B3421ACE41BD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +41,10 @@ Global
 		{796D9B49-9270-4F55-B328-C958C0E7A7BF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{796D9B49-9270-4F55-B328-C958C0E7A7BF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{796D9B49-9270-4F55-B328-C958C0E7A7BF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8FE18501-7368-40F4-8536-B3421ACE41BD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8FE18501-7368-40F4-8536-B3421ACE41BD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8FE18501-7368-40F4-8536-B3421ACE41BD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8FE18501-7368-40F4-8536-B3421ACE41BD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

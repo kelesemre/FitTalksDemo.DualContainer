@@ -1,0 +1,11 @@
+version: '3.4'
+
+services:
+  fittalksdemo.dualcontainer.api:
+    image: ${DOCKER_REGISTRY-}fittalksdemodualcontainerapi
+    build:
+      context: .
+      dockerfile: FitTalksDemo.DualContainer.API/Dockerfile
+  
+  customerdb:
+    image: mcr.microsoft.com/mssql/server:2017-latest

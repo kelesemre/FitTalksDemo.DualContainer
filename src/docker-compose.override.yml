@@ -1,0 +1,21 @@
+version: '3.4'
+
+services:
+  fittalksdemo.dualcontainer.api:
+    container_name: fittalksdemo.dualcontainer.api
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - ConnectionStrings:CustomerConnectionString=Server=customerdb;Database=CustomerDb;User Id =sa;Password=123456Seven
+    depends_on:
+      - customerdb
+    ports:
+      - "5055:80"
+  
+  customerdb:
+    container_name: customerdb
+    environment:
+        SA_PASSWORD: "123456Seven"
+        ACCEPT_EULA: "Y"
+    restart: always
+    ports:
+        - "4040:1433"
