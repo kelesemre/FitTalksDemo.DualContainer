@@ -1,18 +1,18 @@
 version: '3.4'
 
 services:
-  fittalksdemo.dualcontainer.api:
-    container_name: fittalksdemo.dualcontainer.api
+  dualcontainer-api:
+    container_name: dualcontainer-api
     environment:
       - ASPNETCORE_ENVIRONMENT=Development
-      - ConnectionStrings:CustomerConnectionString=Server=customerdb;Database=CustomerDb;User Id =sa;Password=123456Seven
+      - ConnectionStrings:CustomerConnectionString=Server=dualcontainer-microdb;Database=CustomerDb;User Id =sa;Password=123456Seven
     depends_on:
-      - customerdb
+      - dualcontainer-microdb
     ports:
       - "5055:80"
   
-  customerdb:
-    container_name: customerdb
+  dualcontainer-microdb:
+    container_name: dualcontainer-microdb
     environment:
         SA_PASSWORD: "123456Seven"
         ACCEPT_EULA: "Y"
